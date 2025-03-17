@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-color: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background: var(--primary-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    background: var(--light-color);
+}
+
+.team-section, .publications-section, .news-section {
+    padding: 4rem 2rem;
+}
+
+.team-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member.pi {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.team-member.pi img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.publications-list {
+    list-style: none;
+}
+
+.publications-list li {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.news-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        justify-content: center;
+    }
+    
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member.pi {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
