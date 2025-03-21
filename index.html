@@ -5,11 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Team - Water Footprint Lab</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004c8c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #dd1c77;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px;
+            background: linear-gradient(to right, #00509e, #003f7f);
+            color: white;
+            font-size: 24px;
+        }
+        .team-section {
+            padding: 50px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+        }
+        .team-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .team-member.pi {
+            margin-bottom: 50px;
+        }
+        .team-grid .team-members-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            justify-content: center;
+        }
+        .team-member {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #004c8c;
+            font-size: 32px;
+        }
+        footer {
+            background-color: #004c8c;
+            color: #ffeda0;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Water Footprint Lab</div>
+            <div class="logo">
+                <img src="images/Water-Footrpint.jpg" alt="Water Footprint Lab Logo" class="logo-img" style="width: 180px; height: auto;">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#team">Team</a></li>
@@ -28,49 +115,32 @@
         <section id="team" class="team-section">
             <h2>Our Team</h2>
             <div class="team-grid">
-                <!-- Team member 1 - Dr. Mesfin Mekonnen -->
                 <div class="team-member pi">
-                    <img src="images/mesfin.jpg" alt="Dr. Mesfin Mekonnen">
+                    <img src="images/mesfin_mekonnen.jpg" alt="Dr. Mesfin Mekonnen">
                     <h3>Dr. Mesfin Mekonnen</h3>
-                    <p>Position: Principal Investigator (PI)</p>
-                    <p>Research Areas: Food-Energy-Water Nexus</p>
-                    <p>Email: mesfin@university.edu</p>
-                    <p>Education: Ph.D. in Water Engineering and Water Management (University of Twente, Netherlands, 2011)</p>
-                    <p>Selected Works: The Water Footprint of Humanity, Four billion people facing severe water scarcity</p>
-                    <p>Affiliated Areas: Center for Water Quality Research, Center for Complex Hydrosystems Research, Center for Sustainable Infrastructure</p>
+                    <p>Principal Investigator (PI)</p>
                 </div>
-
-                <!-- Team members 2-5 -->
-                <div class="team-member">
-                    <img src="images/habtamu.jpg" alt="Habtamu Tamiru">
-                    <h3>Habtamu Tamiru</h3>
-                    <p>Position: PhD Student</p>
-                    <p>Research Interests: Climate Change, Water Management</p>
-                    <p>Email: habtamu@university.edu</p>
-                </div>
-
-                <div class="team-member">
-                    <img src="images/swantara.jpg" alt="Swantara Sharma">
-                    <h3>Swantara Sharma</h3>
-                    <p>Position: PhD Candidate</p>
-                    <p>Research Interests: Hydrology, Water Resource Management</p>
-                    <p>Email: swantara@university.edu</p>
-                </div>
-
-                <div class="team-member">
-                    <img src="images/bethelem.jpg" alt="Bethelem Demeke">
-                    <h3>Bethelem Demeke</h3>
-                    <p>Position: PhD Candidate</p>
-                    <p>Research Interests: Agricultural Water Use, Sustainability</p>
-                    <p>Email: bethelem@university.edu</p>
-                </div>
-
-                <div class="team-member">
-                    <img src="images/mahletemelaku.jpg" alt="Mahlet Melaku">
-                    <h3>Mahlet Melaku</h3>
-                    <p>Position: PhD Candidate</p>
-                    <p>Research Interests: Water Policy, Environmental Impact</p>
-                    <p>Email: mahlet@university.edu</p>
+                <div class="team-members-container">
+                    <div class="team-member">
+                        <img src="images/habtamu_tamiru.jpg" alt="Habtamu Tamiru">
+                        <h3>Habtamu Tamiru</h3>
+                        <p>PhD Student</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/swantara.jpg" alt="Swantara Sharma">
+                        <h3>Swantara Sharma</h3>
+                        <p>PhD Candidate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/bethelem.jpg" alt="Bethelem Demeke">
+                        <h3>Bethelem Demeke</h3>
+                        <p>PhD Candidate</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/mahletemelaku.jpg" alt="Mahlet Melaku">
+                        <h3>Mahlet Melaku</h3>
+                        <p>PhD Candidate</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,26 +154,25 @@
                     <p>Journal/Conference Name, 2025</p>
                     <a href="#">[PDF]</a>
                 </li>
-                <!-- Add more publications -->
             </ul>
+        </section>
+
+        <section id="research" class="research-section">
+            <h2>Research Findings</h2>
+            <img src="images/catchment_splitting.jpg" alt="Catchment Splitting" class="large-research-image" style="width: 100%; max-width: 900px; display: block; margin: 0 auto;">
         </section>
 
         <section id="news" class="news-section">
             <h2>Latest News</h2>
-            <div class="news-grid">
-                <div class="news-item">
-                    <h3>2023-10-15</h3>
-                    <p>Our team published a new paper in Nature!</p>
-                </div>
-                <!-- Add more news items -->
+            <div class="news-item">
+                <h3>2023-10-15</h3>
+                <p>Our team published a new paper in Nature!</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Water Footprint Lab. All rights reserved.<br>By: Habtamu Tamiru, PhD student.</p>
+        <p>&copy; 2025 Water Footprint Lab. All rights reserved.<br>By: Habtamu Tamiru, PhD Student.</p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
